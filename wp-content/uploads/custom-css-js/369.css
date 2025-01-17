@@ -1,0 +1,270 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+@media only screen and (min-width: 1025px) {
+	.page-id-8 .site-content {
+		background-image: url('/victortest/wp-content/uploads/2025/01/20250107182945_7772.jpg');
+		background-size: 131%;
+		background-repeat: no-repeat;
+		background-position: 50% 0%;
+		background-attachment: fixed;
+	}
+}
+
+.home-ctn-2 .e-con-inner {
+	background-color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.home-ctn-2 .e-con-inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.home-ctn-3 .e-con-inner {
+	background-color: #fff;
+}
+
+.home-product-grid {
+	display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px;
+}
+
+.home-product-grid .grid-item {
+	display: block;
+	text-decoration: none !important;
+}
+
+/* Image */
+
+.home-product-grid .img-ctn {
+	height: 180px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.home-product-grid .img-ctn>img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.home-product-grid .img-ctn .tag-ctn {
+	position: absolute;
+	width: 100%;
+	top: 5px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+	font-style: italic;
+	padding: 6px 8px;
+}
+
+.home-product-grid .img-ctn .tag-ctn i {
+	display: block;
+}
+
+.home-product-grid .img-ctn .tag-ctn.red {
+	background: linear-gradient(90deg, rgba(231, 0, 0, 0) 0%, rgba(231, 0, 0, 1) 50%, rgba(231, 0, 0, 0) 100%);
+    text-shadow: 1px 1px 1px #820000;
+}
+
+.home-product-grid .img-ctn .tag-ctn.green {
+	background: linear-gradient(90deg, rgba(2, 149, 19, 0) 0%, rgba(2, 149, 19, 1) 50%, rgba(2, 149, 19, 0) 100%);
+    text-shadow: 1px 1px 1px #00730d;
+}
+
+
+.home-product-grid .img-ctn .add2cart-btn {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #029513;
+    background: #029513;
+    border-radius: 6px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+	padding: 5px 10px;
+	visibility: hidden;
+}
+
+.home-product-grid .grid-item:hover .add2cart-btn {
+	visibility: visible;
+}
+
+/* Title */
+
+.home-product-grid .text-ctn .title {
+  color: #336699;
+  background: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.45em;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  min-height: 40px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* Salespoints */
+
+.home-product-grid .text-ctn .salespoints-ctn {
+	height: 20px;
+	overflow: hidden;
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+
+.home-product-grid .text-ctn .salespoints-ctn ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+	gap: 6px;
+}
+
+.home-product-grid .text-ctn .salespoints-ctn ul li {
+	color: #336699;
+	border: 0;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  margin: 0;
+	padding: 0 5px;
+  font-size: 10px;
+}
+
+/* Features */
+
+.home-product-grid .text-ctn .features-ctn {
+	list-style: none;
+	margin: 0 0 5px 0;
+	padding: 0;
+	display: flex;
+	align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+	gap: 6px;
+}
+
+.home-product-grid .text-ctn .features-ctn li {
+	margin: 0;
+	padding: 0;
+}
+
+.home-product-grid .text-ctn .features-ctn li i {
+	font-size: 16px;
+	display: block;
+}
+
+.home-product-grid .text-ctn .features-ctn li i.green {
+	color: #029513;
+}
+
+.home-product-grid .text-ctn .features-ctn li i.red {
+	color: #ed332b;
+}
+
+.home-product-grid .text-ctn .features-ctn li i.grey {
+	color: #bbb;
+}
+
+.home-product-grid .text-ctn .features-ctn li i.blue {
+	color: #47a;
+}
+
+.ui-tooltip {
+	background: #47a;
+	color: #fff;
+	font-size: 11px;
+	line-height: 15px;
+ 	padding: 6px 8px;
+  width: 150px;
+  text-align: center;
+	box-shadow: none;
+}
+
+/* Price */
+.home-product-grid .text-ctn .price-ctn {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	gap: 50px;
+}
+
+.home-product-grid .text-ctn .price-ctn li.sale-price {
+	font-size: 20px;
+  font-weight: 600;
+  color: rgba(237, 51, 43, 0.85);
+}
+
+.home-product-grid .text-ctn .price-ctn li.regular-price {
+	font-size: 14px;
+  color: #777;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.home-product-grid {
+		grid-template-columns: repeat(4, 1fr); 
+	}
+	
+	.home-product-grid .grid-item .add2cart-btn {
+		visibility: visible !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.home-product-grid {
+		grid-template-columns: repeat(3, 1fr); 
+	}
+	
+	.home-product-grid .img-ctn {
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.home-product-grid {
+		grid-template-columns: repeat(2, 1fr); 
+	}
+	
+	.home-product-grid .img-ctn {
+		height: 120px;
+	}
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->
